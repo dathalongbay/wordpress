@@ -28,7 +28,20 @@
 
     <p>Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for</p>
 
-    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Syntax highlighted code block
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight">
+        <code>Syntax highlighted code block
+
+            $a = 5;
+$b = 7;
+// $a tham chiếu đến $b đó là lý do biến $a = 7
+$a =& $b;
+// In ra $a và $b trước khi thay đổi giá trị của 1 trong 2 biến
+echo '<br>$a: ' . $a;
+echo '<br>$b: ' . $b;
+// Thay đổi giá trị của biến $b
+$b = 1;
+echo '<br>$a: ' . $a;
+echo '<br>$b: ' . $b;
 
 <span class="gh"># Header 1</span>
 <span class="gu">## Header 2</span>
